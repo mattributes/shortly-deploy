@@ -9,7 +9,6 @@ cd ..
 mkdir -p ./shortly-server
 
 rsync -avz --exclude .git ./shortly-deploy/ ./shortly-server
-# cp -r ./shortly-deploy/. ./shortly-server/
 
 cd ./shortly-server
 
