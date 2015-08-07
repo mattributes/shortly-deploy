@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [ ! -d "./shortly-deploy/" ]; then
+   git clone https://github.com/kamilignac/shortly-deploy.git
+fi
+
 cd ./shortly-deploy/
 git pull
 
