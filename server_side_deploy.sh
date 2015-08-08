@@ -17,4 +17,4 @@ rsync -avz --exclude .git ./shortly-deploy/ ./shortly-server
 cd ./shortly-server
 
 forever stop server.js
-PORT=4568 forever start server.js
+ISPROD=1 PORT=4568 forever start server.js
